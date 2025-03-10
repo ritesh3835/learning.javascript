@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = ["komal", "sachin", "vaishu", "rutuu", "sid"];
+        document.write("Original array: " + a + "<br>");
+
+        // Sort array in ascending order
+        a.sort();
+        document.write("Sorted array: " + a + "<br>");
+
+        // Reverse array
+        a.reverse();
+        document.write("Reversed array: " + a + "<br>");
+    </script>
+
+    <script>
+        var a = ["komal", "shubham", "divya", "Anand"];
+
+        // Display original array
+        document.write("Original array: " + a + "<br>");
+
+        // Add an element at the end of the array
+        a.push("aman");
+        document.write("Array after push: " + a + "<br>");
+
+        // Remove the last element of the array
+        a.pop();
+        document.write("Array after pop: " + a + "<br>");
+
+        // Add an element at the start of the array
+        a.unshift("neha");
+        document.write("Array after unshift: " + a + "<br>");
+
+        // Remove the first element of the array
+        a.shift();
+        document.write("Array after shift: " + a + "<br>");
+
+        // Sort the array
+        a.sort();
+        document.write("Sorted array: " + a + "<br>");
+
+        // Reverse the array
+        a.reverse();
+        document.write("Reversed array: " + a + "<br>");
+
+        // Find an element in the array
+        var found = a.includes("sachin");
+        document.write("Is 'sachin' in the array? " + found + "<br>");
+
+        // Join the elements of the array into a string
+        var joined = a.join(", ");
+        document.write("Joined array: " + joined + "<br>");
+
+        // Slice a portion of the array
+        var sliced = a.slice(1, 4);
+        document.write("Sliced array (from index 1 to 4): " + sliced + "<br>");
+
+        // Splice an element from the array
+        a.splice(2, 1, "newElement");
+        document.write("Array after splice (replacing element at index 2): " + a + "<br>");
+    </script>
+
+</body>
+
+</html>

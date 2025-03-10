@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods in JavaScript</title>
+</head>
+<body>
+    <script>
+        // Initial Array
+        var a = ["komal", "sachin", "vaishu", "rutuu", "sid"];
+        document.write("Original array: " + a + "<br>");
+
+        // 1. Push: Add elements to the end of the array
+        a.push("aman");
+        document.write("Array after push: " + a + "<br>");
+
+        // 2. Pop: Remove the last element
+        a.pop();
+        document.write("Array after pop: " + a + "<br>");
+
+        // 3. Unshift: Add elements to the beginning of the array
+        a.unshift("neha");
+        document.write("Array after unshift: " + a + "<br>");
+
+        // 4. Shift: Remove the first element
+        a.shift();
+        document.write("Array after shift: " + a + "<br>");
+
+        // 5. Sort: Sort the array in ascending order
+        a.sort();
+        document.write("Sorted array: " + a + "<br>");
+
+        // 6. Reverse: Reverse the array order
+        a.reverse();
+        document.write("Reversed array: " + a + "<br>");
+
+        // 7. Concat: Combine two arrays
+        var b = ["john", "doe"];
+        var c = a.concat(b);
+        document.write("Array after concat: " + c + "<br>");
+
+        // 8. Join: Join array elements into a string
+        var joined = a.join(" - ");
+        document.write("Joined array: " + joined + "<br>");
+
+        // 9. Slice: Extract a portion of the array (does not modify original)
+        var sliced = a.slice(1, 3);
+        document.write("Sliced array (1 to 3): " + sliced + "<br>");
+
+        // 10. Splice: Remove/add elements at a specific index
+        a.splice(2, 1, "newElement");
+        document.write("Array after splice (replacing index 2): " + a + "<br>");
+
+        // 11. IndexOf: Find the index of an element
+        var index = a.indexOf("vaishu");
+        document.write("Index of 'vaishu': " + index + "<br>");
+
+        // 12. Includes: Check if an element exists
+        var exists = a.includes("rutuu");
+        document.write("Does 'rutuu' exist in array? " + exists + "<br>");
+
+        // 13. Find: Find the first element that satisfies a condition
+        var found = a.find(element => element.startsWith("r"));
+        document.write("First element starting with 'r': " + found + "<br>");
+
+        // 14. Filter: Filter array based on a condition
+        var filtered = a.filter(element => element.length > 4);
+        document.write("Filtered array (length > 4): " + filtered + "<br>");
+
+        // 15. Map: Create a new array with modified values
+        var mapped = a.map(element => element.toUpperCase());
+        document.write("Mapped array (toUpperCase): " + mapped + "<br>");
+
+        // 16. Reduce: Apply a function to reduce the array to a single value
+        var reduced = a.reduce((accumulator, currentValue) => accumulator + " " + currentValue);
+        document.write("Reduced array (all names combined): " + reduced + "<br>");
+    </script>
+</body>
+</html>
+ 

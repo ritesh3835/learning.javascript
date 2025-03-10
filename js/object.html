@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = {
+            fname: 'Anand',
+            lname: 'ogale',
+            age: 41,
+            email: 'anandogale9@gmail.com',
+            players: ['sachin', 'yuvraj', 'dhoni', 'mahiii'], // array in object
+            address: {
+
+                'city': 'jalgaon', // object within object
+                'country': 'india',
+            },
+            phone: 7972943835,
+            message: "today is ballu tumhare jail se farrar"
+
+        };
+        document.write("this is" + a.lname + "<br>", "my age is" + a.age + "<br>", "my email id is" + a.email + "<br>", a.players[1] +
+            "<br>", a.address.country);
+
+    </script>
+</body>
+
+</html>

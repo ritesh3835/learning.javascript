@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+</head>
+<body>
+    <button id="toggleBtn">Toggle Content</button>
+    <div id="content" style="display:none;">
+        <p>This is some hidden content.</p>
+    </div>
+
+    <script>
+        document.getElementById("toggleBtn").addEventListener("click", function() {
+            const content = document.getElementById("content");
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
